@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EstyCalculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/app.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="calculate">
+        <h3>Esty calculator</h3>
+        <div class="form-area">
+          <form class="form">
+            <input
+              type="number"
+              placeholder="Item price"
+              required
+              name="itemPrice"
+              id=""
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Shipping charge"
+              required
+              name="shippingCharge"
+              id=""
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Shipping cost"
+              required
+              name="shippingCost"
+              id=""
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Item cost"
+              required
+              name="itemCost"
+              id=""
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Taxes"
+              name="tax"
+              id=""
+              class="input"
+            />
+
+            <select name="" id="method" class="input">
+              <option value="0" selected>Payment method</option>
+              <option name="esty" value="esty">
+                Esty Direct Checkout (3% + $0.25)
+              </option>
+              <option name="paypal" value="paypal">Paypal (2.99%)</option>
+            </select>
+          </form>
+        </div>
+        <div class="details-area">
+          <p>Revenue : <span id="revenue"></span></p>
+          <p>Taxes : <span id="taxes"></span></p>
+          <p>Payment fee : <span id="paymentFee"></span></p>
+          <p>Transaction fee : <span id="transactionFee"></span></p>
+          <p class="red">Total fee : <span id="totalFee"></span></p>
+          <p>Total cost : <span id="totalCost"></span></p>
+          <p>Profit : <span id="profit"></span></p>
+          <p class="green">Profit Margin : <span id="margin"></span></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
